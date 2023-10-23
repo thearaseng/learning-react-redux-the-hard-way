@@ -21,9 +21,7 @@ export default function Count() {
   }
 
   const increaseAsync = () => {
-    setTimeout(() => {
-      store.dispatch(createIncrementAsyncAction((selectRef.current.value * 1), 1000));
-    }, 1000);
+    store.dispatch(createIncrementAsyncAction((selectRef.current.value * 1), 1000));
   }
 
   return (
